@@ -1,0 +1,40 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+}
+
+.content-container>* {
+    margin: 10px;
+    /* Add spacing between components */
+}
+
+.TopBanner {
+    flex-shrink: 0;
+    background-color: #f8f9fa;
+    /* Example background */
+    padding: 10px;
+}
+
+.SideList {
+    flex-shrink: 0;
+    width: 200px;
+    /* Fixed width for the side list */
+    background-color: #e9ecef;
+    /* Example background */
+}
+
+.HorizontalList {
+    flex: 1;
+    background-color: #ffffff;
+    /* Example background */
+    padding: 10px;
+    overflow-x: auto;
+    /* Prevent horizontal overflow */
+}
